@@ -203,7 +203,30 @@ much as you can to screenshots
 File: [0-index.html]()
 </summary>
 
+Write an HTML page that displays a header and a footer.
 
+Layout:
+- Body:
+    - no margin
+    - no padding
+- Header:
+    - color #FF0000 (red)
+    - height: 70px
+    - width: 100%
+- Footer:
+    - color #00FF00 (green)
+    - height: 60px
+    - width: 100%
+    - text Best School center vertically and horizontally
+    - always at the bottom at the page
+
+Requirements:
+    - You must use the header and footer tags
+    - You are not allowed to import any files
+    - You are not allowed to use the style tag in the head tag
+    - Use inline styling for all your tags
+
+<img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/img1.jpeg">
 </details>
 
 <details>
@@ -260,7 +283,7 @@ File: [4-index.html](), [styles/4-common.css](), [styles/3-header.css](), [style
 ### 5. More filters 
 `mandatory`
 
-File: [5-index.html], [styles/4-common.css](), [styles/3-header.css](), [styles/3-footer.css](), [styles/5-filters.css](), [images/]()
+File: [5-index.html](), [styles/4-common.css](), [styles/3-header.css](), [styles/3-footer.css](), [styles/5-filters.css](), [images/]()
 </summary>
 
 
