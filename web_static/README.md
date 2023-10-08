@@ -460,6 +460,12 @@ Requirements:
     - styles/3-header.css : for the header style
     - styles/3-footer.css : for the footer style
     - styles/6-filters.css : for the filters style
+
+<br>
+<img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task6a.jpeg">
+
+<br>
+<img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task6b.jpeg">
 </details>
 
 <details>
