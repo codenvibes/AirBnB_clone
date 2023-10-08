@@ -226,6 +226,7 @@ Requirements:
     - You are not allowed to use the style tag in the head tag
     - Use inline styling for all your tags
 
+<br>
 <img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task0.jpeg">
 </details>
 
@@ -373,6 +374,7 @@ Requirements:
     - styles/4-filters.css : for the filters style
 - 4-index.html **won’t be W3C valid**, don’t worry, it’s temporary
 
+<br>
 <img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task4.jpeg">
 </details>
 
