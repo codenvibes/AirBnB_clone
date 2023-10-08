@@ -318,6 +318,7 @@ Requirements:
     - styles/3-header.css : for the header style
     - styles/3-footer.css : for the footer style
 
+<br>
 <img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task3.jpeg">
 </details>
 
@@ -387,7 +388,39 @@ Requirements:
 File: [5-index.html](), [styles/4-common.css](), [styles/3-header.css](), [styles/3-footer.css](), [styles/5-filters.css](), [images/]()
 </summary>
 
+Write an HTML page that displays a header, footer and a filters box.
+Layout: (based on 4-index.html )
+- Locations and Amenities filters:
+    - tag: div
+    - classname: locations for location tag and amenities for the other
+    - inside the section filters (same level as the button Search)
+    - height: 100% of the section filters
+    - width: 25% of the section filters
+    - border right #DDDDDD 1px only for the first left filter
+    - contains a title:
+        - tag: h3
+        - font weight: 600
+        - text States or Amenities
+    - contains a subtitle:
+        - tag: h4
+        - font weight: 400
+        - font size: 14px
+        - text with fake contents
 
+Requirements:
+- You must use: header , footer , section , button , h3 , h4 tags
+- No inline style
+- You are not allowed to use the img tag
+- You are not allowed to use the style tag in the head tag
+- All images must be stored in the images folder
+- You must have 4 CSS files:
+    - styles/4-common.css : for the global style ( body and .container styles)
+    - styles/3-header.css : for the header style
+    - styles/3-footer.css : for the footer style
+    - styles/5-filters.css : for the filters style
+
+<br>
+<img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task5.jpeg">
 </details>
 
 <details>
@@ -399,7 +432,34 @@ File: [5-index.html](), [styles/4-common.css](), [styles/3-header.css](), [style
 File: [6-index.html](), [styles/4-common.css](), [styles/3-header.css](), [styles/3-footer.css](), [styles/6-filters.css](), [images/]()
 </summary>
 
+Write an HTML page that displays a header, footer and a filters box with dropdown.
 
+Layout: (based on 5-index.html )
+- Update Locations and Amenities filters to display a contextual dropdown when the mouse is on the filter div :
+    - tag ul
+    - classname popover
+    - text should be fake now
+    - inside each div
+    - not displayed by default
+    - color #FAFAFA
+    - width same as the div filter
+    - border #DDDDDD 1px with border radius 4px
+    - no list display
+    - Location filter has 2 levels of ul / li :
+        - state -> cities
+        - state name must be display in a h2 tag (font size 16px)
+
+Requirements:
+- You must use: header , footer , section , button , h3 , h4 , ul , li tags
+- No inline style
+- You are not allowed to use the img tag
+- You are not allowed to use the style tag in the head tag
+- All images must be stored in the images folder
+- You must have 4 CSS files:
+    - styles/4-common.css : for the global style ( body and .container styles)
+    - styles/3-header.css : for the header style
+    - styles/3-footer.css : for the footer style
+    - styles/6-filters.css : for the filters style
 </details>
 
 <details>
