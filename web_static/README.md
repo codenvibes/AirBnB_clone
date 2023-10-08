@@ -180,10 +180,10 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 - No cross browsers
 - You have to follow all requirements but some `margin / padding` are missing - you should try to fit as
 much as you can to screenshots
->
+
 
 # More Info
-
+<img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/img1.jpeg">
 
 
 # Quiz questions
@@ -226,7 +226,7 @@ Requirements:
     - You are not allowed to use the style tag in the head tag
     - Use inline styling for all your tags
 
-<img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/img1.jpeg">
+<img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task0.jpeg">
 </details>
 
 <details>
