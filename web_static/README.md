@@ -35,7 +35,7 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 </details>
 
 <details>
-<summary><b><a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML & CSS</a>(until “Creating Lists” included)</b></summary>
+<summary><b><a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML & CSS</a> (until “Creating Lists” included)</b></summary>
 
 
 </details>
