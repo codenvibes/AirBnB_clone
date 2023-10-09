@@ -111,61 +111,61 @@ Do you remember the Shell? It’s exactly the same but limited to a specific use
 
 # Learning Objectives
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b><a href=" ">How to create a Python package</a></b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b><a href=" ">How to create a command interpreter in Python using the cmd module</a></b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b><a href=" ">What is Unit testing and how to implement it in a large project</a></b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b><a href=" ">How to serialize and deserialize a Class</a></b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b><a href=" ">How to write and read a JSON file</a></b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b>How to manage <code>datetime</code></b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b>What is an <code>UUID</code></b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b>What is <code>*args</code> and how to use it</b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b>What is <code>**kwargs</code> and how to use it</b></summary>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a></b></summary>
+<summary><b><a href=" ">How to handle named arguments in a function</a></b></summary>
 
 
 </details>
