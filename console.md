@@ -266,13 +266,20 @@ All tests should also pass in non-interactive mode: `$ echo "python3 -m unittest
 <details>
 <summary>
 
-### 0. 
+### 0. README, AUTHORS
 `mandatory`
 
-File: []()
+File: [README.md](), [AUTHORS]()
 </summary>
 
-
+- Write a `README.md`:
+    - [ ] description of the project
+    - [ ] description of the command interpreter:
+        - [ ] how to start it
+        - [ ] how to use it
+        - [ ] examples
+- You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. For format, reference [Docker’s AUTHORS page](https://github.com/moby/moby/blob/master/AUTHORS)
+- You should use branches and pull requests on GitHub - it will help you as team to organize your work
 </details>
 
 <details>
