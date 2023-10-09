@@ -264,6 +264,8 @@ All tests should also pass in non-interactive mode: `$ echo "python3 -m unittest
 # Video library
 <div><video autoplay="" poster="https://hbtn-vod-input-prod.s3-accelerate.amazonaws.com/ALX/16966eb2f1a059c5e0282d5588288e5729446ea17fbf4e1f4fca0867d788f812/16966eb2f1a059c5e0282d5588288e5729446ea17fbf4e1f4fca0867d788f812.jpg?response-content-disposition=attachment%3B&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231009%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231009T071246Z&amp;X-Amz-Expires=14400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=373e77ec8a61a0599efc69b488ba49f41f1be2da0f5e1290d254b063eaab483f" src="blob:https://intranet.alxswe.com/7d360758-2084-4631-9c07-b10531e6c6d0"></video></div>
 
+![HBNB project overview](blob:https://intranet.alxswe.com/7d360758-2084-4631-9c07-b10531e6c6d0)
+
 # Tasks
 <details>
 <summary>
