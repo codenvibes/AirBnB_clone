@@ -6,5 +6,5 @@
 
 <br>
 
-#### 0x00. [AirBnB clone - The console](https://github.com/codenvibes/AirBnB_clone/blob/master/console.md)
+#### 0x00. [AirBnB clone - The console](https://github.com/codenvibes/AirBnB_clone/blob/master/README.md)
 #### 0x01. [AirBnB clone - Web static](https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/README.md)
