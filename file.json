@@ -1,0 +1,14 @@
+{
+    "BaseModel.e3c13d2d-736f-4d24-8493-2f7cb9fb185a": {
+        "id": "e3c13d2d-736f-4d24-8493-2f7cb9fb185a",
+        "created_at": "2023-10-12T18:24:40.502840",
+        "updated_at": "2023-10-12T18:24:40.502840",
+        "__class__": "BaseModel"
+    },
+    "BaseModel.3c025e4e-613c-40a6-87fa-b423a61eac4b": {
+        "id": "3c025e4e-613c-40a6-87fa-b423a61eac4b",
+        "created_at": "2023-10-12T18:24:40.502840",
+        "updated_at": "2023-10-12T18:24:40.502840",
+        "__class__": "BaseModel"
+    }
+}
