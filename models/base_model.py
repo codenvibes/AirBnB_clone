@@ -19,7 +19,7 @@ class BaseModel:
                 if key == "__class__":
                     continue
                 elif key in ["created_at", "updated_at"]:
-                    setattr(self, key, value)
+                    setattr(self, key, datetime.fromisoformat(value))
                 else:
                     setattr(self, key, value)
         else:
@@ -30,6 +30,7 @@ class BaseModel:
 
 
     def __str__(self):
+        """return string representation of baseclass instance"""
         return "[{}] ({}) <{}>".format(self.__class__.__name__, self.id, self.__dict__)
 
 
@@ -44,16 +45,3 @@ class BaseModel:
         new_dict["updated_at"] = self.created_at.isoformat()
         new_dict["__class__"] = self.__class__.__name__
         return new_dict
-
-all_objs = models.storage.all()
-print("-- Reloaded objects --")
-for obj_id in all_objs.keys():
-    obj = all_objs[obj_id]
-    print(obj)
-
-print("-- Create a new object --")
-my_model = BaseModel()
-my_model.name = "My_First_Model"
-my_model.my_number = 89
-my_model.save()
-print(my_model)
