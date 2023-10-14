@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module provides a command-line interface for interacting with models and objects in a hypothetical database management system.
+This module provides a command-line interface for interacting with
+models and objects in a hypothetical database management system.
 
 Auth: codenvibes & amoskarugo
 """
@@ -16,11 +17,14 @@ import re
 from shlex import split
 from models import storage
 
+
 class HBNBCommand(cmd.Cmd):
     """
-    This class provides a command-line interface for interacting with models and objects in a hypothetical database management system.
+    This class provides a command-line interface for interacting
+    with models and objects in a hypothetical database management system.
 
-    Supported commands include creating, showing, updating, destroying, and listing objects, as well as counting instances.
+    Supported commands include creating, showing, updating,
+    destroying, and listing objects, as well as counting instances.
 
     Attributes:
         prompt (str): The command prompt.
@@ -45,13 +49,15 @@ class HBNBCommand(cmd.Cmd):
 
     def default(self, input):
         """
-        Handle unknown or complex commands that are not standard. It parses and delegates the commands based on specific syntax.
+        Handle unknown or complex commands that are not standard.
+        It parses and delegates the commands based on specific syntax.
 
         Args:
             input (str): The input command.
 
         Returns:
-            bool: True if the command was executed successfully, False otherwise.
+            - bool: True if the command was executed successfully,
+            False otherwise.
         """
         cmd_dict = {
             "all": self.do_all,
@@ -62,10 +68,12 @@ class HBNBCommand(cmd.Cmd):
         }
         dot_search = re.search(r"\.", input)
         if dot_search is not None:
-            list_arg = [input[:dot_search.span()[0]], input[dot_search.span()[1]:]]
+            list_arg = [input[:dot_search.span()[0]], input
+                        [dot_search.span()[1]:]]
             dot_search = re.search(r"\((.*?)\)", list_arg[1])
             if dot_search is not None:
-                action = [list_arg[1][:dot_search.span()[0]], dot_search.group()[1:-1]]
+                action = [list_arg[1][:dot_search.span()[0]],
+                          dot_search.group()[1:-1]]
                 if action[0] in cmd_dict.keys():
                     call = "{} {}".format(list_arg[0], action[1])
                     return cmd_dict[action[0]](call)
@@ -74,7 +82,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, input):
         """
-        Handle the EOF (End of File) command by printing a new line and returning True to exit the command loop.
+        Handle the EOF (End of File) command by printing a new line
+        and returning True to exit the command loop.
 
         Args:
             input (str): The input command.
@@ -99,7 +108,9 @@ class HBNBCommand(cmd.Cmd):
 
     def do_create(self, input):
         """
-        Create a new instance of a model class and print its unique identifier (id) to the console. The new instance is also saved to the database.
+        Create a new instance of a model class and print its unique
+        identifier (id) to the console. The new instance is also
+        saved to the database.
 
         Args:
             input (str): The input command.
@@ -118,7 +129,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, input):
         """
-        Show the string representation of an instance of a model class based on the provided class name and instance ID.
+        Show the string representation of an instance of a model
+        class based on the provided class name and instance ID.
 
         Args:
             input (str): The input command.
@@ -141,7 +153,9 @@ class HBNBCommand(cmd.Cmd):
 
     def do_destroy(self, input):
         """
-        Delete an instance of a model class based on the provided class name and instance ID. The instance is removed from the database.
+        Delete an instance of a model class based on the provided
+        class name and instance ID. The instance is removed from
+        the database.
 
         Args:
             input (str): The input command.
@@ -165,7 +179,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_all(self, input):
         """
-        List all instances of a model class or all instances of all model classes if no class name is provided.
+        List all instances of a model class or all instances of all
+        model classes if no class name is provided.
 
         Args:
             input (str): The input command.
@@ -179,7 +194,8 @@ class HBNBCommand(cmd.Cmd):
         else:
             objl = []
             for object in storage.all().values():
-                if len(list_arg) > 0 and list_arg[0] == object.__class__.__name__:
+                if len(list_arg) > 0 and list_arg[0] == object.\
+                        __class__.__name__:
                     objl.append(object.__str__())
                 elif len(list_arg) == 0:
                     objl.append(object.__str__())
@@ -204,7 +220,9 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, input):
         """
-        Update the attributes of an instance of a model class based on the provided class name, instance ID, and attribute name-value pairs.
+        Update the attributes of an instance of a model class based
+        on the provided class name, instance ID, and attribute
+        name-value pairs.
 
         Args:
             input (str): The input command.
@@ -248,16 +266,19 @@ class HBNBCommand(cmd.Cmd):
             object = obj_dict["{}.{}".format(list_arg[0], list_arg[1])]
             for k, v in eval(list_arg[2]).items():
                 if (k in object.__class__.__dict__.keys() and
-                        type(object.__class__.__dict__[k]) in {str, int, float}):
+                        type(object.__class__.__dict__[k]) in {str,
+                                                               int, float}):
                     valtype = type(object.__class__.__dict__[k])
                     object.__dict__[k] = valtype(v)
                 else:
                     object.__dict__[k] = v
         storage.save()
 
+
 def tokenize(input):
     """
-    Tokenize the input string into a list of command tokens, considering the presence of curly braces and brackets.
+    Tokenize the input string into a list of command tokens,
+    considering the presence of curly braces and brackets.
 
     Args:
         input (str): The input command.
@@ -280,6 +301,7 @@ def tokenize(input):
         list = [token.strip(",") for token in token_res]
         list.append(curly_braces.group())
         return list
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
