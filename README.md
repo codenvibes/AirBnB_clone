@@ -485,7 +485,7 @@ guillaume@ubuntu:~/AirBnB$
 ### 5. Store first object
 `mandatory`
 
-File: [models/engine/file_storage.py](), [models/engine/__init__.py](), [models/__init__.py](), [models/base_model.py, tests/]()
+File: [models/engine/file_storage.py](), [models/engine/__init__.py](), [models/__init__.py](), [models/base_model.py](), [tests/]()
 </summary>
 
 Now we can recreate a `BaseModel` from another one by using a dictionary representation:
