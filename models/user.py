@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This module defines the User class, which is a subclass of BaseModel.
-It represents user information such as email, password, first name, 
+It represents user information such as email, password, first name,
 and last name.
 
 Authors: codenvibes, amoskarugo
