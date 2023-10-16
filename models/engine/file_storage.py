@@ -4,6 +4,12 @@
 
 import json
 from models.base_model import BaseModel
+from models.user import User
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.state import State
+
 
 class FileStorage:
     """class FileStorage that serializes instances to a
@@ -46,7 +52,7 @@ class FileStorage:
          no exception should be raised)"""
 
         try:
-            with open("file.json", "r") as file_storage:
+            with open(FileStorage.__file_path, "r", encoding='utf-8') as file_storage:
                 objects_dict = json.load(file_storage)
                 for key, value in objects_dict.items():
                     class_name, id = key.split(".")

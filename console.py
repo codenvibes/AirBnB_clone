@@ -1,18 +1,24 @@
-#!/usr/bin/python3.8
+#!/usr/bin/python3
 
 """command interpreter"""
 
 import cmd
 import json
 import shlex
+import re
 
 from models.base_model import BaseModel
 import models
-
+from models.user import User
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.state import State
 
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
-    classes = ["BaseModel"]
+    classes = ["BaseModel", "User", "State",
+               "City", "Amenity", "Place"]
 
     def do_quit(self, arg):
         """quit the command interpreter"""
@@ -30,10 +36,10 @@ class HBNBCommand(cmd.Cmd):
         args = shlex.split(line)
 
         if len(args) > 0:
-            if args[0] == "BaseModel":
-                base_model = BaseModel()
-                base_model.save()
-                print(base_model.id)
+            if args[0] in self.classes:
+                instance_ = globals()[args[0]]()
+                instance_.save()
+                print(instance_.id)
             else:
                 print("** class doesn't exist **")
         else:
@@ -146,7 +152,27 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** class name missing **")
 
-
+    def default(self, line):
+        """This is a method that is called on unrecognised commands"""
+        class_name, method = line.split(".")
+        str_line = f"{class_name}"
+        all_objs = models.storage.all()
+        if class_name in self.classes:
+            if method == "all()":
+                all_instances = []
+                for key, obj in all_objs.items():
+                    instance, id = key.split(".")
+                    if instance == class_name:
+                        all_instances.append(obj)
+                print(all_instances)
+                # self.do_all(str_line)
+            elif method == "count()":
+                count = 0
+                for key, value in all_objs.items():
+                    instance, id = key.split(".")
+                    if instance == class_name:
+                        count += 1
+                print(count)
 
 
 if __name__ == '__main__':
