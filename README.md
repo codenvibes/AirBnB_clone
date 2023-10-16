@@ -840,11 +840,7 @@ Write all those classes that inherit from `BaseModel`:
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 10.
-=======
-### 10. Console 1.0
->>>>>>> fd3e6b2 (Update README.md)
 `mandatory`
 
 File: [console.py](), [models/engine/file_storage.py](), [tests/]()
@@ -862,11 +858,7 @@ Enjoy your first console!
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 11.
-=======
-### 11. All instances by class name
->>>>>>> fd3e6b2 (Update README.md)
 `#advanced`
 
 File: []()
@@ -885,11 +877,7 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 12.
-=======
-### 12. Count instances
->>>>>>> fd3e6b2 (Update README.md)
 `#advanced`
 
 File: [console.py]()
@@ -908,11 +896,7 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 13.
-=======
-### 13. Show
->>>>>>> fd3e6b2 (Update README.md)
 `#advanced`
 
 File: [console.py]()
@@ -935,11 +919,7 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 14.
-=======
-### 14. Destroy
->>>>>>> fd3e6b2 (Update README.md)
 `#advanced`
 
 File: [console.py]()
@@ -965,11 +945,7 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 15.
-=======
-### 15. Update
->>>>>>> fd3e6b2 (Update README.md)
 `#advanced`
 
 File: [console.py]()
@@ -996,11 +972,7 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 16.
-=======
-### 16. Update from dictionary
->>>>>>> fd3e6b2 (Update README.md)
 `#advanced`
 
 File: [console.py]()
@@ -1026,11 +998,7 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 <details>
 <summary>
 
-<<<<<<< HEAD
 ### 17.
-=======
-### 17. Unittests for the Console!
->>>>>>> fd3e6b2 (Update README.md)
 `#advanced`
 
 File: [tests/test_console.py]()
@@ -1038,14 +1006,4 @@ File: [tests/test_console.py]()
 
 Write all unittests for `console.py`, all features!
 
-<<<<<<< HEAD
 </details>
-=======
-For testing the console, you should “intercept” STDOUT of it, we **highly** recommend you to use:
-```
-with patch('sys.stdout', new=StringIO()) as f:
-    HBNBCommand().onecmd("help show")
-```
-Otherwise, you will have to re-write the console by replacing `precmd` by `default`.
-</details>
->>>>>>> fd3e6b2 (Update README.md)
