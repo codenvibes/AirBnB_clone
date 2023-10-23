@@ -10,7 +10,6 @@
     border: 1px solid #DDD;
     border-radius: 4px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -23,5 +22,6 @@
     border: none;
     border-radius: 4px;
     margin-right: 30px;
+    margin-left: auto;
     opacity: 90%;
 }
