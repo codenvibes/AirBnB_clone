@@ -318,7 +318,24 @@ Number of quotes is important!
 <details>
 <summary><h3>Question 6</h3></summary>
 
+Is following CSS syntax valid?
+```CSS
+body {
+    color: #FF0000;
+}
 
+h3,
+div.full_text
+div.small_text h4
+div.filters p.title {
+    font-size: 20px;
+}
+```
+- [ ] No
+- [x] Yes
+
+> Tips: <br>
+`,` separates multiple selector, without it’s specific selector
 </details>
 
 <details>
