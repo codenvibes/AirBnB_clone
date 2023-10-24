@@ -397,13 +397,42 @@ Is the following HTML markup valid?
 <details>
 <summary><h3>Question 10</h3></summary>
 
+In the following code, is the text `Best School` red?
 
+css:
+```css
+h1 {
+    color: red;
+}
+```
+html:
+```html
+<h1>Best School</h1>
+```
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
 <summary><h3>Question 11</h3></summary>
 
+Is following CSS syntax valid?
+```CSS
+body {
+    color: #FF0000;
+}
 
+* {
+    font-size: 14px;
+    text-align: center;
+    margin: 30px 12px 4px;
+}
+```
+- [ ] No
+- [x] Yes
+
+> **Tips:** <br>
+`margin` and `padding` support 4 different syntaxes: `margin`
 </details>
 
 <details>
