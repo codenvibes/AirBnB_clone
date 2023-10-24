@@ -212,7 +212,20 @@ Betty for CSS!
 <details>
 <summary><h3>Question 1</h3></summary>
 
+In the following code, is the text Best School red?
 
+css:
+```css
+h2 {
+    color: red;
+}
+```
+html:
+```html
+<h1>Best School</h1>
+```
+- [x] No
+- [ ] Yes
 </details>
 
 <details>
