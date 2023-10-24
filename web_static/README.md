@@ -276,13 +276,43 @@ div.filters p.title {
 <details>
 <summary><h3>Question 4</h3></summary>
 
+In the following code, is the text `Best School` red?
 
+css:
+```css
+h1.title {
+    color: red;
+}
+```
+html:
+```html
+<h1>Best School</h1>
+```
+- [x] No
+- [ ] Yes
 </details>
 
 <details>
 <summary><h3>Question 5</h3></summary>
 
+Is the following HTML markup valid?
+```HTML
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>
+            <a href="www.google.com'>Google</a>
+        </h1>
+    </body>
+</html>
+```
+(elements are correctly tagged, we don’t care about `!Doctype` here)
+- [x] No
+- [ ] Yes
 
+> **Tips:** <br>
+Number of quotes is important!
 </details>
 
 <details>
