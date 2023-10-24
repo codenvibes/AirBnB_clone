@@ -231,7 +231,26 @@ html:
 <details>
 <summary><h3>Question 2</h3></summary>
 
+Is following CSS syntax valid?
+```css
+body {
+    color: #FF0000;
+}
 
+* {
+    font-size: 14px;
+    text-align: center;
+
+    h1 {
+        margin: 30px;
+    }
+}
+```
+- [x] No
+- [ ] Yes
+
+> **Tips:** <br>
+CSS vs SCSS
 </details>
 
 <details>
