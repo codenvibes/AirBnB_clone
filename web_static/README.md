@@ -361,13 +361,37 @@ Each HTML tag must be closed
 <details>
 <summary><h3>Question 8</h3></summary>
 
+In the following code, is the text `Best School` red?
 
+css:
+```css
+h1 div.title {
+    color: red;
+}
+```
+html:
+```html
+<h1>Best School</h1>
+```
+- [x] No
+- [ ] Yes
 </details>
 
 <details>
 <summary><h3>Question 9</h3></summary>
 
-
+Is the following HTML markup valid?
+```HTML
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+```
+(elements are correctly tagged, we don’t care about `!Doctype` here)
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
