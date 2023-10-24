@@ -432,49 +432,162 @@ body {
 - [x] Yes
 
 > **Tips:** <br>
-`margin` and `padding` support 4 different syntaxes: `margin`
+`margin` and `padding` support 4 different syntaxes: [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
 </details>
 
 <details>
 <summary><h3>Question 12</h3></summary>
 
+In the following code, is the text `Best School` red?
 
+css:
+```css
+h1 {
+    color: green;
+}
+
+span.my_title {
+    color: red;
+}
+```
+html:
+```html
+<h1>
+    <span class="my_title">Best School</span>
+</h1>
+```
+- [ ] No
+- [x] Yes
+
+> **Tips:** <br>
+[CSS selector math](https://www.standardista.com/wp-content/uploads/2012/01/specificity3.pdf)
 </details>
 
 <details>
 <summary><h3>Question 13</h3></summary>
 
+In the following code, is the text `Best School` red?
 
+css:
+```css
+h3 span.text,
+h1,
+div.title {
+    color: red;
+}
+```
+html:
+```html
+<h1>Best School</h1>
+```
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
 <summary><h3>Question 14</h3></summary>
 
+Is following CSS syntax valid?
+```CSS
+body {
+    color: #FF0000;
+}
 
+div.filters h2 {
+    font-size: 16px;
+}
+```
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
 <summary><h3>Question 15</h3></summary>
 
+Is the following HTML markup valid?
+```html
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="logo.png" />
+    </body>
+</html>
+```
+(elements are correctly tagged, we don’t care about `!Doctype` here)
+- [ ] No
+- [x] Yes
 
+> **Tips:** <br>
+`<img />` is an empty element
 </details>
 
 <details>
 <summary><h3>Question 16</h3></summary>
 
+Is following CSS syntax valid?
+```CSS
+body {
+    color: #FF0000;
+}
 
+* {
+    font-size: 14px;
+}
+```
+- [ ] No
+- [x] Yes
+
+> **Tips:** <br>
+[Universal selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)
 </details>
 
 <details>
 <summary><h3>Question 17</h3></summary>
 
-
+Is the following HTML markup valid?
+```HTML
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>
+            <a href="www.google.com">Go to <b>Google</b>
+        </h1>
+    </body>
+</html>
+```
+(elements are correctly tagged, we don’t care about `!Doctype` here)
+- [x] No
+- [ ] Yes
 </details>
 
 <details>
 <summary><h3>Question 18</h3></summary>
 
+In the following code, is the text `Best School` red?
 
+css:
+```css
+h1 .my_title {
+    color: green;
+}
+
+.my_title {
+    color: red;
+}
+```
+html:
+```html
+<h1>
+    <span class="my_title">Best School</span>
+</h1>
+```
+- [x] No
+- [ ] Yes
+
+> **Tips:** <br>
+[CSS selector math](https://www.standardista.com/wp-content/uploads/2012/01/specificity3.pdf)
 </details>
 
 <details>
