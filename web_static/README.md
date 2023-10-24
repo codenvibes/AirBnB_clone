@@ -205,7 +205,7 @@ body {
 - [x] No
 - [ ] Yes
 
-> Tips: <br>
+> **Tips:** <br>
 Betty for CSS!
 </details>
 
