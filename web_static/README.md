@@ -593,31 +593,83 @@ html:
 <details>
 <summary><h3>Question 19</h3></summary>
 
-
+Is following CSS syntax valid?
+```CSS
+body {
+    color: #FF0000;
+}
+```
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
 <summary><h3>Question 20</h3></summary>
 
+Is following CSS syntax valid?
+```CSS
+body {
+    color: #FF0000;
+}
 
+div.filters p.title h2 span.text.big {
+    font-size: 20px;
+}
+```
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
 <summary><h3>Question 21</h3></summary>
 
+Is the following HTML markup valid?
+```HTML
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Best <b>School</h1></b>
+    </body>
+</html>
+```
+(elements are correctly tagged, we don’t care about `!Doctype` here)
+- [x] No
+- [ ] Yes
 
+> **Tips:** <br>
+“Always close something before opening a new thing”
 </details>
 
 <details>
 <summary><h3>Question 22</h3></summary>
 
-
+Is the following HTML markup valid?
+```html
+<html></html>
+```
+(elements are correctly tagged, we don’t care about `!Doctype` here)
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
 <summary><h3>Question 23</h3></summary>
 
+Is following CSS syntax valid?
+```CSS
+body {
+    color: #FF0000;
+}
 
+h1.title {
+    font-size: 16px;
+}
+```
+No
+
+
+Yes
 </details>
 
 # Tasks
@@ -644,13 +696,13 @@ Layout:
     - color #00FF00 (green)
     - height: 60px
     - width: 100%
-    - text Best School center vertically and horizontally
+    - text `Best School` center vertically and horizontally
     - always at the bottom at the page
 
 Requirements:
-    - You must use the header and footer tags
+    - You must use the `header` and `footer` tags
     - You are not allowed to import any files
-    - You are not allowed to use the style tag in the head tag
+    - You are not allowed to use the `style` tag in the `head` tag
     - Use inline styling for all your tags
 
 <br>
@@ -666,16 +718,15 @@ Requirements:
 File: [1-index.html]()
 </summary>
 
-Write an HTML page that displays a header and a footer by using the style tag in the head tag (same as
-0-index.html )
+Write an HTML page that displays a header and a footer by using the `style` tag in the `head` tag (same as `0-index.html`)
 
 Requirements:
-- You must use the header and footer tags
+- You must use the `header` and `footer` tags
 - You are not allowed to import any files
 - No inline styling
-- You must use the style tag in the head tag
+- You must use the `style` tag in the `head` tag
 
-The layout must be exactly the same as 0-index.html
+The layout must be exactly the same as `0-index.html`
 </details>
 
 <details>
@@ -687,17 +738,17 @@ The layout must be exactly the same as 0-index.html
 File: [2-index.html](), [styles/2-common.css](), [styles/2-header.css](), [styles/2-footer.css]()
 </summary>
 
-Write an HTML page that displays a header and a footer by using CSS files (same as 1-index.html )
+Write an HTML page that displays a header and a footer by using CSS files (same as `1-index.html`)
 
 Requirements:
-- You must use the header and footer tags
+- You must use the `header` and `footer` tags
 - No inline styling
 - You must have 3 CSS files:
-    - styles/2-common.css : for global style (i.e. the body style)
-    - styles/2-header.css : for header style
-    - styles/2-footer.css : for footer style
+    - `styles/2-common.css` : for global style (i.e. the `body` style)
+    - `styles/2-header.css` : for header style
+    - `styles/2-footer.css` : for footer style
 
-The layout must be exactly the same as 1-index.html
+The layout must be exactly the same as `1-index.html`
 </details>
 
 <details>
@@ -709,7 +760,7 @@ The layout must be exactly the same as 1-index.html
 File: [3-index.html](), [styles/3-common.css](), [styles/3-header.css](), [styles/3-footer.css](), [images/]()
 </summary>
 
-Write an HTML page that displays a header and footer by using CSS files (same as 2-index.html )
+Write an HTML page that displays a header and footer by using CSS files (same as `2-index.html` )
 
 Layout:
 - Common:
@@ -717,7 +768,7 @@ Layout:
     - no padding
     - font color: #484848
     - font size: 14px
-    - font family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    - font family: `Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;`
     - [icon](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higherlevel_programming+/268/icon.png) in the browser tab
 
 - Header:
@@ -732,18 +783,18 @@ Layout:
     - height: 60px
     - width: 100%
     - border top 1px #CCCCCC
-    - text Best School center vertically and horizontally
+    - text `Best School` center vertically and horizontally
     - always at the bottom at the page
 
 Requirements:
 - No inline style
-- You are not allowed to use the img tag
-- You are not allowed to use the style tag in the head tag
-- All images must be stored in the images folder
+- You are not allowed to use the `img` tag
+- You are not allowed to use the `style` tag in the `head` tag
+- All images must be stored in the `images` folder
 - You must have 3 CSS files:
-    - styles/3-common.css : for the global style (i.e body style)
-    - styles/3-header.css : for the header style
-    - styles/3-footer.css : for the footer style
+    - `styles/3-common.css` : for the global style (i.e `body` style)
+    - `styles/3-header.css` : for the header style
+    - `styles/3-footer.css` : for the footer style
 
 <br>
 <img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task3.jpeg">
@@ -759,25 +810,24 @@ File: [4-index.html](), [styles/4-common.css](), [styles/3-header.css](), [style
 </summary>
 
 Write an HTML page that displays a header, footer and a filters box with a search button.
-Layout: (based on 3-index.html )
+Layout: (based on `3-index.html` )
 - Container:
-    - between header and footer tags, add a div :
-        - classname: container
+    - between `header` and `footer` tags, add a `div` :
+        - classname: `container`
         - max width 1000px
-        - margin top and bottom 30px - it should be 30px under the bottom of the header
-(screenshot)
+        - margin top and bottom 30px - it should be 30px under the bottom of the `header` (screenshot)
         - center horizontally
 - Filter section:
-    - tag section
-    - classname filters
-    - inside the .container
+    - tag `section`
+    - classname `filters`
+    - inside the `.container`
     - color white
     - height: 70px
     - width: 100% of the container
     - border 1px #DDDDDD with radius 4px
 - Button search:
-    - tag button
-    - text Search
+    - tag `button`
+    - text `Search`
     - font size: 18px
     - inside the section filters
     - background color #FF5A5F
@@ -790,17 +840,17 @@ Layout: (based on 3-index.html )
     - change opacity to 90% when the mouse is on the button
 
 Requirements:
-- You must use: header , footer , section , button tags
+- You must use: `header` , `footer` , `section` , `button` tags
 - No inline style
-- You are not allowed to use the img tag
-- You are not allowed to use the style tag in the head tag
-- All images must be stored in the images folder
+- You are not allowed to use the `img` tag
+- You are not allowed to use the `style` tag in the `head` tag
+- All images must be stored in the `images` folder
 - You must have 4 CSS files:
-    - styles/4-common.css : for the global style ( body and .container styles)
-    - styles/3-header.css : for the header style
-    - styles/3-footer.css : for the footer style
-    - styles/4-filters.css : for the filters style
-- 4-index.html **won’t be W3C valid**, don’t worry, it’s temporary
+    - `styles/4-common.css` : for the global style ( `body` and .`container` styles)
+    - `styles/3-header.css` : for the header style
+    - `styles/3-footer.css` : for the footer style
+    - `styles/4-filters.css` : for the filters style
+- `4-index.html` **won’t be W3C valid**, don’t worry, it’s temporary
 
 <br>
 <img src="https://github.com/codenvibes/AirBnB_clone/blob/master/web_static/pics/task4.jpeg">
