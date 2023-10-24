@@ -666,10 +666,8 @@ h1.title {
     font-size: 16px;
 }
 ```
-No
-
-
-Yes
+- [ ] No
+- [x] Yes
 </details>
 
 # Tasks
