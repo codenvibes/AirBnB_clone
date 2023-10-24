@@ -190,7 +190,23 @@ much as you can to screenshots
 <details>
 <summary><h3>Question 0</h3></summary>
 
+Is following CSS syntax valid?
+```css
+body {
+    color: #FF0000;
+}
 
+* {
+    font-size: 14px;
+    font-weight: 400
+    text-align: center;
+}
+```
+- [x] No
+- [ ] Yes
+
+> Tips: <br>
+Betty for CSS!
 </details>
 
 <details>
