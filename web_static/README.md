@@ -341,7 +341,21 @@ div.filters p.title {
 <details>
 <summary><h3>Question 7</h3></summary>
 
+Is the following HTML markup valid?
+```HTML
+<html>
+    <head>
+    </head>
+    <body>
+    <body>
+</html>
+```
+(elements are correctly tagged, we don’t care about `!Doctype` here)
+- [x] No
+- [ ] Yes
 
+> **Tips:** <br>
+Each HTML tag must be closed
 </details>
 
 <details>
