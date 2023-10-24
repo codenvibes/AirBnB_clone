@@ -256,7 +256,21 @@ CSS vs SCSS
 <details>
 <summary><h3>Question 3</h3></summary>
 
+Is following CSS syntax valid?
+```css
+body {
+    color: #FF0000;
+}
 
+h3,
+div.full_text,
+div.small_text h4,
+div.filters p.title {
+    font-size: 20px;
+}
+```
+- [ ] No
+- [x] Yes
 </details>
 
 <details>
