@@ -26,13 +26,13 @@
     margin-left: auto;
 }
 
-.locations, .amenities {
+.filters .locations, .filters .amenities {
     height: 100%;
     width: 25%;
     /* padding-left: 40px; */
 }
 
-.locations {
+.filters .locations {
     border-right: #DDD 1px solid;
 }
 
@@ -57,7 +57,7 @@
     border-radius: 4px;
 }
 
-.locations:hover .popover, .amenities:hover .popover {
+.filters .locations:hover .popover, .filters .amenities:hover .popover {
     display: block;
 }
 
